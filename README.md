@@ -1,8 +1,10 @@
 # Система (демо)
 
 ## Запуск проекта
-```$ docker-compose up -d --build```
-```$ docker-compose run app_api_test python /opt/project/manage.py loaddata users applications```
+```
+$ docker-compose up -d --build
+$ docker-compose run app_api_test python /opt/project/manage.py loaddata users applications
+```
 
 
 ## API методы
