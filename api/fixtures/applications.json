@@ -1,0 +1,18 @@
+[
+  {
+    "model": "api.application",
+    "pk": 5,
+    "fields": {
+      "name": "app1",
+      "api_key": "1bc0e279-6b06-4f07-ba97-b0ae30b58613"
+    }
+  },
+  {
+    "model": "api.application",
+    "pk": 6,
+    "fields": {
+      "name": "app2",
+      "api_key": "a2639be9-7ae6-4f40-8c2f-72945b94ab16"
+    }
+  }
+]
