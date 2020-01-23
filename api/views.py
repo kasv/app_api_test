@@ -7,6 +7,7 @@ from api.serializers import ApplicationSerializer
 
 
 class ApplicationsAPIView(ListCreateAPIView):
+    """ Получить список приложений или создать новое """
     authentication_classes = [BasicAuthentication]
     permission_classes = [DjangoModelPermissions]
     queryset = Application.objects.all()
@@ -14,6 +15,7 @@ class ApplicationsAPIView(ListCreateAPIView):
 
 
 class SingleApplicationAPIView(RetrieveUpdateDestroyAPIView):
+    """ Получить, обновить или удалить приложение по ID """
     authentication_classes = [BasicAuthentication]
     permission_classes = [DjangoModelPermissions]
     queryset = Application.objects.all()
@@ -21,6 +23,7 @@ class SingleApplicationAPIView(RetrieveUpdateDestroyAPIView):
 
 
 class JSONApplicationAPIView(RetrieveAPIView):
+    """ Получить приложение по API ключу """
     authentication_classes = [BasicAuthentication]
     permission_classes = [DjangoModelPermissions]
     queryset = Application.objects.all()

@@ -1,19 +1,10 @@
 version: '3'
 
 services:
-  db:
-    image: postgres
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
-  web:
+  app_api_test:
     build: .
-    command: python /opt/project/manage.py runserver --noreload 0.0.0.0:5000
+    command: /bin/sh /opt/project/entry.sh
     volumes:
       - .:/opt/project
     ports:
       - 5000:5000
-    depends_on:
-      - db
-
-volumes:
-  postgres_data:
